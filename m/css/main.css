@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+/* 메인컨텐츠 서식 */
+main{
+    
+}
+.mslide{
+    height: 50vh; /* vertical height */
+    overflow: hidden;
+    position: relative;
+}
+.mslide img{
+    width: 100%; /* 자동크기조절 */
+}
+.mslide_h2{
+    display: none;
+}
+.mslide h2{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 16px 14px;
+    border-radius: 30px;
+    width: 240px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    line-height: 30px;
+}
+.mslide .swiper-pagination{
+    position: absolute;
+    bottom: 50px !important;
+}
+.mslide .swiper-pagination-bullet{
+    transition: .5s;
+}
+.mslide .swiper-pagination-bullet-active{
+    width: 50px;
+    border-radius: 10px;
+    background-color: rgb(107, 164, 250);
+}
+
+/* 메인컨텐츠 내비게이션 */
+.m_gnb{
+    width: 90%;
+    margin: 20px auto;
+}
+.m_gnb > ul{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 10px;
+}
+.m_gnb > ul > li{
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.icon{
+    background-image: url('../images/nav_icon.png');
+    display: inline-block;
+    background-size: 360px;
+    width: 83px;
+    height: 66px;
+}
+.mnu{
+    display: block;
+    line-height: 30px;
+    font-weight: 600;
+}
+.map{
+    width: 100%;
+    grid-area: 3/1/3/4;
+}
+
+/* 각 li태그 icon 이미지 위치 변경 */
+.m_gnb li:first-child .icon{}
+.m_gnb li:nth-child(2) .icon{
+    background-position: -82px 1px;
+}
+.m_gnb li:nth-child(3) .icon{
+    background-position: -168px 2px;
+}
+.m_gnb li:nth-child(4) .icon{
+    background-position: 106px 2px;
+}
+.m_gnb li:nth-child(5) .icon{
+    background-position: 9px -64px;
+}
+.m_gnb li:nth-child(6) .icon{
+    background-position: -66px -65px;
+}
+.m_gnb li:last-child .icon{
+    background-position: -259px -106px;
+    background-size: 600px;
+    display: inline-block;
+}
+.m_gnb li:last-child .mnu{
+    display: inline-block;
+    font-size: 16px;
+    transform: translateY(25px);
+}
+
+/* 연락처 */
+.info{
+    width: 90%;
+    height: 70px;
+    margin: 20px auto;
+    background-image: url('../images/info_back.png');
+    background-size: 100%;
+    color: #fff;
+}
+.info h3{
+    width: 150px;
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+}
+.info a{
+    color: #fff;
+    font-size: 16px;
+}
+.info .fa-phone{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 22px 5px 0px 15%;
+}
+.info .tel{
+    padding-top: 15px;
+    line-height: 22px;
+}
